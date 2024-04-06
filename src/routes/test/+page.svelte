@@ -1,4 +1,5 @@
 <script>
+    import Seo from 'sk-seo';
     let url = "";
     let seoTags = null;
 
@@ -20,7 +21,11 @@
         }
     };
 </script>
-
+<Seo 
+    title="Test your site"
+    description="Test the SEO viability of your site"
+    keywords="test, seo, skeleton"
+/>
 <h3 class="h3">Test SEO viability of your site</h3>
 <div class="input-group flex input-group-divider grid-cols-[auto_1fr_auto]">
     <input class="input" title="Input (url)" type="url" bind:value={url} placeholder="example.com" />
