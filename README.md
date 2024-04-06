@@ -2,11 +2,11 @@
 
 This is a demo site for [sk-seo](https://github.com/TheDahoom/sk-seo). 
 
-Built with:
-Framework: [SvelteKit](https://kit.svelte.dev/)
-Styling (who needs vanilla css?): [TailwindCSS](https://tailwindcss.com/)
-Beutiful UI library: [Skeleton](https://skeleton.dev/)
-Cool simple seo component (might be biased)[sk-seo](https://github.com/TheDahoom/sk-seo)
+## Tech Stack
+- Framework: [SvelteKit](https://kit.svelte.dev/)
+- Styling: [TailwindCSS](https://tailwindcss.com/) (who needs vanilla css?)
+- Beautiful UI library: [Skeleton](https://skeleton.dev/)
+- Cool simple seo component: [sk-seo](https://github.com/TheDahoom/sk-seo) (I might be biased)
 
 
 ## Developing
