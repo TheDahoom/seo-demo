@@ -9,8 +9,8 @@
 		drawPath = true;
 	})
 </script>
-<Seo title="Home" description="Home page for sk-seo" keywords="sveltekit, seo, skeleton" 	imageURL="https://sk-seo.pages.dev/seo.png"
-logo="https://sk-seo.pages.dev/favicon.png"
+<Seo title="Home" description="Home page for sk-seo" keywords="sveltekit, seo, skeleton" 	imageURL="/seo.png"
+logo="/favicon.png"
 author="Dahoom"
 name="Dahoom"
 socials={[
