@@ -7,9 +7,17 @@
     description="Getting started with sk-seo"
     keywords="sveltekit, seo, skeleton"
 />
-<div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-10 text-center flex flex-col items-center">
-        <h2 class="h2">Getting started</h2>
-        <CodeBlock language="shell" code={`npm i -D sk-seo`}></CodeBlock>
+<div class="w-full h-full  flex justify-center items-center">
+	<div class="space-y-5 mx-2 flex flex-col items-center">
+        <h2 class="h2">Quick Start</h2>
+        <h3 class="h3">Install</h3>
+        <CodeBlock class={'w-full'} language="shell" code={`npm i -D sk-seo`}></CodeBlock>
+        <h3 class="h3">import</h3>
+        <CodeBlock class={'w-full'} language="javascript" code={`import Seo from 'sk-seo';`}></CodeBlock>
+        <h3 class="h3">Use</h3>
+        <CodeBlock language="xml" code={`<Seo title="Quick Start" \ndescription="Quick start webpage for sk-seo" \nkeywords="Quickstart, introduction" />`}></CodeBlock>
+        <h3 class="h3">Thats all!</h3>
+        <button class="btn variant-filled">Advanced use</button>
+
     </div>
 </div>
