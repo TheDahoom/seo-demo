@@ -8,6 +8,7 @@
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
+<Seo imageURL="https://sk-seo.pages.dev/seo.png" logo="https://sk-seo.pages.dev/favicon.png" author="Dahoom" name="Dahoom" />
 <!-- App Shell -->
 <AppShell>
 	<svelte:fragment slot="header">
