@@ -6,6 +6,16 @@
     title="Getting started"
     description="Getting started with sk-seo"
     keywords="sveltekit, seo, skeleton"
+    imageURL="https://sk-seo.pages.dev/seo.png"
+	logo="https://sk-seo.pages.dev/favicon.png"
+	author="Dahoom"
+	name="Dahoom"
+	socials={[
+		 'https://twitter.com/TheDahoom',
+		 'https://instagram.com/TheDahoom',
+		 'https://github.com/TheDahoom',
+		 'https://linkedin.com/in/dahoom'
+	]}
 />
 <div class="w-full h-full  flex justify-center items-center">
 	<div class="space-y-5 mx-2 flex flex-col items-center">

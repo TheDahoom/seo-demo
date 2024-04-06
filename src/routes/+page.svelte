@@ -9,7 +9,16 @@
 		drawPath = true;
 	})
 </script>
-<Seo title="Home" description="Home page for sk-seo" keywords="sveltekit, seo, skeleton" />
+<Seo title="Home" description="Home page for sk-seo" keywords="sveltekit, seo, skeleton" 	imageURL="https://sk-seo.pages.dev/seo.png"
+logo="https://sk-seo.pages.dev/favicon.png"
+author="Dahoom"
+name="Dahoom"
+socials={[
+	 'https://twitter.com/TheDahoom',
+	 'https://instagram.com/TheDahoom',
+	 'https://github.com/TheDahoom',
+	 'https://linkedin.com/in/dahoom'
+]} />
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center flex flex-col items-center">
 		<button on:click={() => {drawPath = !drawPath; setTimeout(() =>{drawPath = true}, 2000)}} class="scale-[250%] mb-7">
