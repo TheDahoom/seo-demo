@@ -1,4 +1,5 @@
 <script>
+	import Seo from 'sk-seo';
 	import '../app.postcss';
 	import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
@@ -7,7 +8,9 @@
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
+<Seo 
 
+/>
 <!-- App Shell -->
 <AppShell>
 	<svelte:fragment slot="header">
@@ -42,9 +45,5 @@
 		</AppBar>
 	</svelte:fragment>
 	<!-- Page Route Content -->
-	<div class="container h-full mx-auto flex justify-center items-center">
-		<div class="space-y-10 text-center flex flex-col items-center">
-			<slot />
-			</div>
-	</div>
+	<slot />
 </AppShell>
