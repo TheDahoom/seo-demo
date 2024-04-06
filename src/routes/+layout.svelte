@@ -28,7 +28,7 @@
 				</a>
 				<a
 				class="btn btn-sm variant-ghost-surface {$page.path === '/' ? 'active' : ''}"
-				href="/"
+				href="/demo"
 				>
 					demo
 				</a>
