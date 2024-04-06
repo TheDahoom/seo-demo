@@ -10,14 +10,14 @@
     export let twitter = true;
     export let openGraph = true;
     export let schemaOrg = false;
-    export let imageURL = "";
+    export let imageUARL = "";
     export let logo = "";
     export let author = "";
     export let socials = [];
     export let name = "";
 
     let socialsString = socials.map(e => e.url).join(", ");
-
+    let imageURL = $page.url.origin + imageUARL;
     let jsonLd = {
         "@context": "https://schema.org",
         "@type":  ['Person', 'Organization'],
