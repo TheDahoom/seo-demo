@@ -26,12 +26,15 @@
     description="Test the SEO viability of your site"
     keywords="test, seo, skeleton"
 />
-<h3 class="h3">Test SEO viability of your site</h3>
-<div class="input-group flex input-group-divider grid-cols-[auto_1fr_auto]">
-    <input class="input" title="Input (url)" type="url" bind:value={url} placeholder="example.com" />
-    <button class="variant-filled-secondary" on:click={search}>Submit</button>
+<div class="h-full mx-auto flex justify-center items-center">
+    <div class="space-y-10 text-center flex flex-col items-center">
+        <h3 class="h3">Test SEO viability of your site</h3>
+        <div class="input-group flex input-group-divider grid-cols-[auto_1fr_auto]">
+            <input class="input" title="Input (url)" type="url" bind:value={url} placeholder="example.com" />
+            <button class="variant-filled-secondary" on:click={search}>Submit</button>
+        </div>
+    </div>
 </div>
-
 {#if seoTags}
     <div>
         <p>Title: {seoTags.title}</p>
