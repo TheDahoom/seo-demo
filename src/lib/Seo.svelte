@@ -41,8 +41,10 @@
     ${'<'}/script>`;
 </script>
 <svelte:head>
-    <meta name="robots" content={index ? "index, follow" : "noindex"} />
     {#if browser}
+        {#if document.querySelector('meta[name="robots"]') === null}
+        <meta name="robots" content={index ? "index, follow" : "noindex"} />
+        {/if}
         {#if title !== "" && document.querySelector('meta[name="title"]') === null}
             <title>{title}</title>
         {/if}
