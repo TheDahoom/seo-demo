@@ -1,7 +1,7 @@
 <script>
 	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
-
+	import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
+	import { page } from '$app/stores';
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
@@ -14,32 +14,29 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<a href="/">
+					<strong class="text-xl">sk-seo</strong>
+				</a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
+				<LightSwitch />
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://discord.gg/EXqV7W8MtY"
-					target="_blank"
-					rel="noreferrer"
+					href="/docs"
 				>
-					Discord
+					docs
+				</a>
+				<a
+				class="btn btn-sm variant-ghost-surface {$page.path === '/' ? 'active' : ''}"
+				href="/"
+				>
+					demo
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
-					target="_blank"
-					rel="noreferrer"
+					href="/test"
 				>
-					Twitter
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
-					target="_blank"
-					rel="noreferrer"
-				>
-					GitHub
+					test
 				</a>
 			</svelte:fragment>
 		</AppBar>

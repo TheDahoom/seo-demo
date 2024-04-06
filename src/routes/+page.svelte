@@ -21,9 +21,7 @@
 		<div class="flex justify-center space-x-2">
 			<a
 				class="btn variant-filled"
-				href="https://skeleton.dev/"
-				target="_blank"
-				rel="noreferrer"
+				href="/docs"
 			>
 				Launch Documentation
 			</a>
