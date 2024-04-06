@@ -9,7 +9,7 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 <Seo 
-
+	imageUrl="/seo.png"
 />
 <!-- App Shell -->
 <AppShell>
