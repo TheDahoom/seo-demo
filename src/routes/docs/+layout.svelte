@@ -11,5 +11,7 @@
 	hljs.registerLanguage('javascript', javascript);
 	hljs.registerLanguage('typescript', typescript);
 	storeHighlightJs.set(hljs);
-
 </script>
+<div class="flex flex-row justify-center w-full">
+	<slot />
+</div>
