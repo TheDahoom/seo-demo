@@ -6,5 +6,5 @@
     title="Demo"
     description="demo page for sk-seo package"
     keywords="sveltekit, seo, skeleton"
-    imageURL="/seo.png"
+    imageUARL="/seo.png"
 />
