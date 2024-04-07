@@ -19,6 +19,9 @@ socials={[
 	 'https://github.com/TheDahoom',
 	 'https://linkedin.com/in/dahoom'
 ]} />
+<svelte:head>
+	<meta name="google-site-verification" content="iVDzQJO-Ai8tAdUUwZdmZhLeKFb5Msda6ZOJVENCg30" />
+</svelte:head>
 <!-- App Shell -->
 <AppShell>
 	<svelte:fragment slot="header">
