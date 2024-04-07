@@ -4,8 +4,14 @@
 	import { onMount } from "svelte";
 	import { draw } from "svelte/transition";
 
+	let size = 2.4;
 	let drawPath = false;
 	onMount(() => {
+		fetch("https://bundlephobia.com/api/size?package=sk-seo")
+			.then((res) => res.json())
+			.then((data) => {
+				size = data.gzip;
+			});
 		drawPath = true;
 	})
 </script>
@@ -18,7 +24,7 @@
 		{/if}
 		</button>
 		<h2 class="h2 mt-2 md:mt-10">A dead simple SEO component for SvelteKit</h2>
-		<i class="h5 mb-2">No dependencies and only 2.4kb gzipped!</i>
+		<i class="h5 mb-2">No dependencies and only {Math.floor(size)}kb gzipped!</i>
 		<!-- / -->
 		<div class="flex justify-center space-x-2">
 			<a
