@@ -9,16 +9,7 @@
 		drawPath = true;
 	})
 </script>
-<Seo title="Home" description="Home page for sk-seo" keywords="sveltekit, seo, skeleton" imageURL="/seo.png"
-logo="/favicon.png"
-author="Dahoom AlShaya"
-name="Dahoom AlShaya"
-socials={[
-	 'https://twitter.com/TheDahoom',
-	 'https://instagram.com/TheDahoom',
-	 'https://github.com/TheDahoom',
-	 'https://linkedin.com/in/dahoom'
-]} />
+<Seo title="Sk-seo" description="A dead simple SEO component for SvelteKit" keywords="sveltekit, seo, skeleton, tiny, npm, package, library" />
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class=" text-center flex flex-col items-center">
 		<button on:click={() => {drawPath = !drawPath; setTimeout(() =>{drawPath = true}, 2000)}} class="scale-[250%] mb-7">
@@ -27,7 +18,7 @@ socials={[
 		{/if}
 		</button>
 		<h2 class="h2 mt-10">A dead simple SEO component for SvelteKit</h2>
-		<i class="h5 mb-2">No dependencies and only 3kb gzipped!</i>
+		<i class="h5 mb-2">No dependencies and only 2.4kb gzipped!</i>
 		<!-- / -->
 		<div class="flex justify-center space-x-2">
 			<a
