@@ -15,10 +15,10 @@
     export let socials = [];
     export let name = "";
 
-    let socialsString = socials.map(e => e.url).join(", ");
+    let socialsString = socials.join(", ");
 
     let jsonLd = {
-        "@context": "https://schema.org",
+        "@context": "https://schemaa.org",
         "@type":  ['Person', 'Organization'],
         "name": `${name}`,
         "url": `${$page.url.origin}`,

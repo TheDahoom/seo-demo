@@ -1,5 +1,6 @@
 <script>
-	import Seo from 'sk-seo';
+	// import Seo from 'sk-seo';
+	import Seo from '$lib/Seo.svelte';
 	import '../app.postcss';
 	import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
@@ -8,7 +9,12 @@
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
-<Seo imageURL="https://sk-seo.pages.dev/seo.png" logo="https://sk-seo.pages.dev/favicon.png" author="Dahoom" name="Dahoom" />
+<Seo imageURL="https://sk-seo.pages.dev/seo.png" logo="https://sk-seo.pages.dev/favicon.png" author="Dahoom" name="Dahoom" socials={[
+	'https://linkedin.com/in/dahoom',
+	'https://twitter.com/TheDahoom',
+	'https://instagram.com/TheDahoom',
+	'https://github.com/TheDahoom'
+]}   />
 <!-- App Shell -->
 <AppShell>
 	<svelte:fragment slot="header">
