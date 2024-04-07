@@ -7,6 +7,7 @@ This is a demo site for [sk-seo](https://github.com/TheDahoom/sk-seo).
 - Styling: [TailwindCSS](https://tailwindcss.com/) (who needs vanilla css?)
 - Beautiful UI library: [Skeleton](https://skeleton.dev/)
 - Cool simple seo component: [sk-seo](https://github.com/TheDahoom/sk-seo) (I might be biased)
+- Hosted on: [Cloudflare pages](https://pages.cloudflare.com/)
 
 
 ## Developing
