@@ -9,10 +9,10 @@
 		drawPath = true;
 	})
 </script>
-<Seo title="Home" description="Home page for sk-seo" keywords="sveltekit, seo, skeleton" 	imageURL="/seo.png"
+<Seo title="Home" description="Home page for sk-seo" keywords="sveltekit, seo, skeleton" imageURL="/seo.png"
 logo="/favicon.png"
-author="Dahoom"
-name="Dahoom"
+author="Dahoom AlShaya"
+name="Dahoom AlShaya"
 socials={[
 	 'https://twitter.com/TheDahoom',
 	 'https://instagram.com/TheDahoom',
