@@ -14,6 +14,7 @@
 <div class="flex flex-col space-between md:flex-row md:h-full md:w-full">
     <div class="h-full w-full p-4">
         <FakeCodeBlock />
+        Try editing one of the props
     </div>
     <div class="outline-dotted h-full w-full p-4">
         <div>
