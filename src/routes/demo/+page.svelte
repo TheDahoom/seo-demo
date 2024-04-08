@@ -13,5 +13,15 @@
 />
 <div class="flex flex-col space-between md:flex-row w-full h-full">
     <FakeCodeBlock></FakeCodeBlock>
-    <div class="outline-dotted h-full w-full">hi</div>
+    <div class="outline-dotted h-full w-full">
+        <div>
+            example google view
+        </div>
+        <div>
+            example discord view
+        </div>
+        <div>
+            example twitter view
+        </div>
+    </div>
 </div>
