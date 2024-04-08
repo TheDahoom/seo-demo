@@ -5,11 +5,12 @@
     let buttonLabel = "Copy";
     let buttonCopied = "\u{1F44D}";
     let copyState = false;
-    let description = 'Quick start webpage for sk-seo';
+    
+    import { description } from "$lib/stores/store";
 
     async function onCopyClick() {
         copyState = true;
-        code = code.innerText.replace('description="', `description="${description}`);
+        code = code.innerText.replace('description="', `description="${$description}`);
         await copyToClipboard(code);
         setTimeout(() => {
             copyState = false;
@@ -34,10 +35,12 @@
         >&lt;<span class="hljs-name">Seo</span> <span class="hljs-attr"
           >title</span
         >=<span class="hljs-string">"Quick Start"</span> 
-<span class="hljs-attr">description</span>="<input
-          class="hljs-string bg-none"
-          bind:value={description}
-        />"
+<div class="flex flex-row">
+    <span class="hljs-attr">description</span>="<input
+              class="hljs-string bg-none"
+              bind:value={$description}
+            />"
+</div>
 <span class="hljs-attr">keywords</span>=<span class="hljs-string"
           >"Quickstart, introduction"</span
         > /&gt;</span
