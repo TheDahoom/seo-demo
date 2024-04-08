@@ -4,17 +4,27 @@
 	import { onMount } from "svelte";
 	import { draw } from "svelte/transition";
 
-	let size = 2.4;
+    export let data;
 	let drawPath = false;
+	
 	onMount(() => {
-		fetch("https://bundlephobia.com/api/size?package=sk-seo")
-			.then((res) => res.json())
-			.then((data) => {
-				size = data.gzip;
-			});
 		drawPath = true;
 	})
 </script>
+<script context="module">
+    export async function load({ fetch }) {
+        const res = await fetch('https://bundlephobia.com/api/size?package=sk-seo');
+        const data = await res.json();
+		console.log(data);
+
+        if (res.ok) {
+            return { props: { gzip: data.gzip } };
+        } else {
+            this.error(res.status, data.message);
+        }
+    }
+</script>
+
 <Seo title="sk-seo" description="A dead simple SEO component for SvelteKit" keywords="sveltekit, seo, skeleton, tiny, npm, package, library" />
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class=" text-center flex flex-col items-center">
@@ -24,7 +34,7 @@
 		{/if}
 		</button>
 		<h2 class="h2 mt-2 md:mt-10">A dead simple SEO component for SvelteKit</h2>
-		<i class="h5 mb-2">No dependencies and only {Math.floor(size)}kb gzipped!</i>
+		<i class="h5 mb-2">No dependencies and only {data.props.gzip}kb gzipped!</i>
 		<!-- / -->
 		<div class="flex justify-center space-x-2">
 			<a
