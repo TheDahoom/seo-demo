@@ -11,9 +11,11 @@
     description="demo page for sk-seo package"
     keywords="sveltekit, seo, skeleton"
 />
-<div class="flex flex-col space-between md:flex-row w-full h-full">
-    <FakeCodeBlock></FakeCodeBlock>
-    <div class="outline-dotted h-full w-full">
+<div class="flex flex-col space-between md:flex-row md:h-full md:w-full">
+    <div class="h-full w-full p-4">
+        <FakeCodeBlock />
+    </div>
+    <div class="outline-dotted h-full w-full p-4">
         <div>
             example google view
         </div>
