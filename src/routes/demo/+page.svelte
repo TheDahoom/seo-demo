@@ -1,9 +1,9 @@
 <script>
-  import FakeCodeBlock from './FakeCodeBlock.svelte';
-
+    import FakeCodeBlock from './FakeCodeBlock.svelte';
     import Seo from 'sk-seo';
     import { CodeBlock } from '@skeletonlabs/skeleton';
-
+    let description;
+    
     // import Seo from '$lib/Seo.svelte';
 </script>
 <Seo 
@@ -13,8 +13,9 @@
 />
 <div class="flex flex-col space-between md:flex-row md:h-full md:w-full">
     <div class="h-full w-full p-4">
-        <FakeCodeBlock />
-        Try editing one of the props
+        <!-- required for copy to work -->
+        <FakeCodeBlock bind:description={description} />
+        Try editing one of the props{$description}
     </div>
     <div class="outline-dotted h-full w-full p-4">
         <div>

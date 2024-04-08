@@ -1,15 +1,17 @@
 <script>
     import { copyToClipboard } from "$lib/scripts/clipboard";
+    import { writable } from "svelte/store";
+    
     let code = "";
     let button = "btn btn-sm variant-soft !text-white";
     let buttonLabel = "Copy";
     let buttonCopied = "\u{1F44D}";
     let copyState = false;
-    let description = 'Quick start webpage for sk-seo';
+    export let description = writable('Quick start webpage for sk-seo');
 
     async function onCopyClick() {
         copyState = true;
-        code = code.innerText.replace('description="', `description="${description}`);
+        code = code.innerText.replace('description="', `description="${$description}`);
         await copyToClipboard(code);
         setTimeout(() => {
             copyState = false;
@@ -36,7 +38,7 @@
         >=<span class="hljs-string">"Quick Start"</span> 
 <span class="hljs-attr">description</span>="<input
           class="hljs-string bg-none"
-          bind:value={description}
+          bind:value={$description}
         />"
 <span class="hljs-attr">keywords</span>=<span class="hljs-string"
           >"Quickstart, introduction"</span
