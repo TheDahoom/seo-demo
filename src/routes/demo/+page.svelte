@@ -15,11 +15,14 @@
     <div class="h-full w-full p-4">
         <!-- required for copy to work -->
         <FakeCodeBlock bind:description={description} />
-        Try editing one of the props{$description}
+        Try editing one of the props
     </div>
     <div class="outline-dotted h-full w-full p-4">
         <div>
             example google view
+            {#if $description}
+                {$description}
+            {/if}
         </div>
         <div>
             example discord view
