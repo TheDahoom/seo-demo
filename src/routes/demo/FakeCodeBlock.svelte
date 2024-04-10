@@ -7,10 +7,15 @@
     let buttonLabel = "Copy";
     let buttonCopied = "\u{1F44D}";
     let copyState = false;
+    let focusInput;
 
     export let title = writable('Quick Start');
     export let description = writable('Quick start webpage for sk-seo');
     export let keywords = writable('Quickstart, introduction');
+
+    export function focus() {
+        focusInput.focus();
+    }
 
     async function onCopyClick() {
         copyState = true;
@@ -42,6 +47,7 @@
         class="hljs-string bg-none"
         spellcheck="false"
         bind:value={$title}
+        bind:this={focusInput}
         size={$title.length - $title.length/11 || 1}
       />"
 <span class="hljs-attr">description</span>="<input

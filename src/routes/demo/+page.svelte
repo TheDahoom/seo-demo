@@ -3,7 +3,7 @@
     import Seo from 'sk-seo';
     import { CodeBlock } from '@skeletonlabs/skeleton';
     let title, description, keywords;
-    
+    let focusInput;
     // import Seo from '$lib/Seo.svelte';
 </script>
 <Seo 
@@ -14,9 +14,9 @@
 <div class="flex flex-col space-between md:flex-row md:h-full md:w-full">
     <div class="h-full w-full p-4">
         <!-- required for copy to work -->
-        <FakeCodeBlock bind:description bind:title bind:keywords />
+        <FakeCodeBlock bind:this={focusInput} bind:description bind:title bind:keywords />
         <div class="text-center">
-            Try editing one of the <span class="hljs-attr">props</span>
+            Try editing one of the <button class="hljs-attr cursor-pointer" on:click={() => focusInput.focus()}>props</button>
         </div>
     </div>
     <div class="outline-dotted h-full w-full p-4">
