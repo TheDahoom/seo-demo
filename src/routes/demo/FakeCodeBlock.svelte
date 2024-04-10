@@ -39,7 +39,7 @@
 <span class="hljs-attr">description</span>="<input
           class="hljs-string bg-none"
           bind:value={$description}
-          size={$description.length - 2 || 1}
+          size={$description.length - $description.length/25 || 1}
         />"
 <span class="hljs-attr">keywords</span>=<span class="hljs-string"
           >"Quickstart, introduction"</span
