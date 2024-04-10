@@ -7,11 +7,14 @@
     let buttonLabel = "Copy";
     let buttonCopied = "\u{1F44D}";
     let copyState = false;
+
+    export let title = writable('Quick Start');
     export let description = writable('Quick start webpage for sk-seo');
+    export let keywords = writable('Quickstart, introduction');
 
     async function onCopyClick() {
         copyState = true;
-        code = code.innerText.replace('description="', `description="${$description}`);
+        code = code.innerText.replace('description="', `description="${$description}`).replace('title="', `title="${$title}`).replace('keywords="', `keywords="${$keywords}`);
         await copyToClipboard(code);
         setTimeout(() => {
             copyState = false;
@@ -35,14 +38,25 @@
       ><span class="hljs-tag"
         >&lt;<span class="hljs-name">Seo</span> <span class="hljs-attr"
           >title</span
-        >=<span class="hljs-string">"Quick Start"</span> 
+        >="<input
+        class="hljs-string bg-none"
+        spellcheck="false"
+        bind:value={$title}
+        size={$title.length - $title.length/11 || 1}
+      />"
 <span class="hljs-attr">description</span>="<input
           class="hljs-string bg-none"
+          spellcheck="false"
           bind:value={$description}
           size={$description.length - $description.length/25 || 1}
         />"
-<span class="hljs-attr">keywords</span>=<span class="hljs-string"
-          >"Quickstart, introduction"</span
+<span class="hljs-attr">keywords</span>="<span class="hljs-string"
+          ><input
+          class="hljs-string bg-none"
+          spellcheck="false"
+          bind:value={$keywords}
+          size={$keywords.length - $keywords.length/20 || 1}
+        />"</span
         > /&gt;</span
       ></code
     ></pre>
