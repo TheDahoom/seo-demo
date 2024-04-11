@@ -32,7 +32,7 @@
                 <div>
                     <cite class="text-[#bdc1c6] truncate not-italic text-xs/[18px] block whitespace-nowrap">
                         https://www.example.com
-                        <span class="text-[#bdc1c6]"> › page › page</span>
+                        <span class="text-[#bdc1c6]"> › ...</span>
                     </cite>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                 <h3 class="!font-normal">{$title}</h3>
             </a>
         </div>
-        <div class="font-normal text-sm/[1.58] ">
+        <div class="font-normal text-[#bdc1c6] text-sm/[1.58] ">
             {$description}
         </div>
     </div>
