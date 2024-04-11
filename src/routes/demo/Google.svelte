@@ -30,10 +30,16 @@
                     </span>
                 </div>
                 <div>
-                    <cite class="text-[#bdc1c6] text-xs/[18px] block whitespace-nowrap">
+                    <cite class="text-[#bdc1c6] truncate not-italic text-xs/[18px] block whitespace-nowrap">
                         https://www.example.com
+                        <span class="text-[#bdc1c6]"> › page › page</span>
                     </cite>
                 </div>
+            </div>
+            <div class="mt-4 h-[18px] ml-2 relative">
+                <span class="top-[2px] inline-block relative h-[18px] leading-[18px] w-[18px] fill-current">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                </span>
             </div>
         </div>
     </div>
