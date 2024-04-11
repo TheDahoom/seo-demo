@@ -11,9 +11,8 @@
 <div class="bg-[#202124] rounded-xl">
   <div class="container mx-auto px-4">
     <div class="py-2">
-        
-        <div class="">
-
+        <div class="flex overflow-hidden p-0 pb-0 items-center">
+            {$title}
         </div>
     </div>
 </div>
