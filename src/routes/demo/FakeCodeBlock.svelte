@@ -48,20 +48,20 @@
         spellcheck="false"
         bind:value={$title}
         bind:this={focusInput}
-        size={$title.length - $title.length/11 || 1}
+        size={$title.length > 70 ? 70 : $title.length - $title.length/11 || 1}
       />"
 <span class="hljs-attr">description</span>="<input
           class="hljs-string bg-none"
           spellcheck="false"
           bind:value={$description}
-          size={$description.length - $description.length/25 || 1}
+          size={$description.length > 70 ? 70 :$description.length - $description.length/25 || 1}
         />"
 <span class="hljs-attr">keywords</span>="<span class="hljs-string"
           ><input
           class="hljs-string bg-none"
           spellcheck="false"
           bind:value={$keywords}
-          size={$keywords.length - $keywords.length/20 || 1}
+          size={$keywords.length > 50 ? 50 : $keywords.length - $keywords.length/20 || 1}
         />"</span
         > /&gt;</span
       ></code
