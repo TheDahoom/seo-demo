@@ -1,7 +1,8 @@
 <script>
+    import Google from './Google.svelte';
     import FakeCodeBlock from './FakeCodeBlock.svelte';
     import Seo from 'sk-seo';
-    import { CodeBlock } from '@skeletonlabs/skeleton';
+
     let title, description, keywords;
     let focusInput;
     // import Seo from '$lib/Seo.svelte';
@@ -20,8 +21,10 @@
         </div>
     </div>
     <div class="outline-dotted h-full w-full p-4">
+        <!-- just prop by itself wouldnt work for some reason -->
+        <Google title={title} description={description} keyword={description} />
         <div>
-            example google view
+            example discord view
             {#if $title}
                 {$title}
             {/if}
@@ -31,9 +34,6 @@
             {#if $keywords}
                 {$keywords}
             {/if}
-        </div>
-        <div>
-            example discord view
         </div>
         <div>
             example twitter view
