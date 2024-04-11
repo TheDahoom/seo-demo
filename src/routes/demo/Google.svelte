@@ -10,9 +10,9 @@
 </script>
 
 <div class="bg-[#202124] rounded-xl">
-  <div class="container mx-auto px-4">
+  <div class="container mx-auto px-4" style="font-family: Arial, sans-serif;">
     <div class="py-2">
-        <div class="flex overflow-hidden p-0 pb-0 items-center">
+        <div class="flex overflow-hidden p-0 pb-0 items-center" >
             <div class="bg-white border border-solid inline-flex justify-center items-center rounded-full mr-3 h-[26px] w-[26px] shrink-0">
                 {#if icon !== ""}
                     <svg style="height: 18px;
@@ -43,9 +43,12 @@
             </div>
         </div>
         <div class="mt-[6px] mb-[3px]">
-            <a href="/demo" class="hover:underline text-[#8ab4f8]">
-                <h3>{$title}</h3>
+            <a href="/demo" class="hover:underline text-xl/[1.3] text-[#8ab4f8]">
+                <h3 class="!font-normal">{$title}</h3>
             </a>
+        </div>
+        <div class="font-normal text-sm/[1.58] ">
+            {$description}
         </div>
     </div>
 </div>
