@@ -22,7 +22,7 @@
     </div>
     <div class="outline-dotted h-full w-full p-4">
         <!-- just prop by itself wouldnt work for some reason -->
-        <Google title={title} description={description} keyword={description} />
+        <Google title={title} description={description} keywords={keywords} />
         <div>
             example discord view
             {#if $title}
