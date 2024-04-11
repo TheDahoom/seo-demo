@@ -23,7 +23,18 @@
                     <img src="/favicon.ico" alt="icon" class="h-6 w-6" />
                 {/if}
             </div>
-            {$title}
+            <div class="block overflow-hidden">
+                <div>
+                    <span class="text-[#dadce0] text-sm block whitespace-nowrap">
+                        {$title}
+                    </span>
+                </div>
+                <div>
+                    <cite class="text-[#bdc1c6] text-xs/[18px] block whitespace-nowrap">
+                        https://www.example.com
+                    </cite>
+                </div>
+            </div>
         </div>
     </div>
 </div>
