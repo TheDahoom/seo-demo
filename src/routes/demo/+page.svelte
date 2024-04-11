@@ -14,7 +14,7 @@
 />
 <div>
     <h3 class="h3 text-center mt-4">Preview</h3>
-    <div class="h5 text-center mb-1">What your pages (should) look like in social platforms </div>
+    <div class="h5 text-center mb-1">What your website (should) look like in different platforms </div>
 </div>
 <div class="flex flex-col space-between md:flex-row md:h-full md:w-full">
     <div class="h-full w-full p-4">
