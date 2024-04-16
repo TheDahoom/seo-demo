@@ -22,12 +22,12 @@
   <div class="container mx-auto px-4" style="font-family: Arial, sans-serif;">
     <div class="py-2">
         <!-- TODO add button for google title/header info with popup -->
-        <!-- Content: Google sometimes sets one of the headers as the title (highlighted in blue) and might also include header or paragraph content in the description aswell  -->
+        <!-- Content:   -->
         <div class="relative">
             <button class="btn btn-sm absolute top-0 right-0 bg-none rounded-md px-0 py-0" use:popup={GoogleInfo} ><InfoIcon /></button>
         </div>
-        <div class="card p-4 shadow-xl" data-popup="GoogleInfo">
-            <div><p>Demo Content</p></div>
+        <div class="card p-3 w-56 shadow-xl text-md" data-popup="GoogleInfo">
+            <div><p>Google sometimes sets one of the headers as the <span class="hover:underline text-md text-[#8ab4f8]">title</span> and might also include header or paragraph content in the description</p></div>
             <div class="arrow bg-surface-100-800-token" />
         </div>
         <div class="flex overflow-hidden p-0 pb-0 items-center" >
