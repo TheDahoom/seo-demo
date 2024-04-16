@@ -9,7 +9,7 @@
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
-<!-- <Seo imageURL="/seo.png"
+<Seo imageURL="/seo.png"
 logo="/favicon.png"
 author="Dahoom AlShaya"
 name="Dahoom AlShaya"
@@ -18,7 +18,7 @@ socials={[
 	 'https://instagram.com/TheDahoom',
 	 'https://github.com/TheDahoom',
 	 'https://linkedin.com/in/dahoom'
-]} /> -->
+]} />
 <svelte:head>
 	<meta name="google-site-verification" content="iVDzQJO-Ai8tAdUUwZdmZhLeKFb5Msda6ZOJVENCg30" />
 </svelte:head>
