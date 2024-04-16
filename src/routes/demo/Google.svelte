@@ -13,8 +13,9 @@
   <div class="container mx-auto px-4" style="font-family: Arial, sans-serif;">
     <div class="py-2">
         <!-- TODO add button for google title/header info with popup -->
+        <!-- Content: Google sometimes sets one of the headers as the title (highlighted in blue) and might also include header or paragraph content in the description aswell  -->
         <div class="relative">
-            <button class="absolute top-0 right-0 bg-blue-500 text-white rounded-md px-4 py-2">i</button>
+            <button class="absolute top-0 right-0 bg-none text-white rounded-md px-4 py-2">i</button>
         </div>
 
         <div class="flex overflow-hidden p-0 pb-0 items-center" >
