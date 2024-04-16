@@ -4,6 +4,7 @@
     export let title = "";
     export let description = "";
     export let keywords = "";
+    export let canonical = "";
     export let siteName = "";
     export let index = true;
     export let twitter = true;
@@ -18,7 +19,7 @@
     let socialsString = socials.join(", ");
 
     let jsonLd = {
-        "@context": "https://schemaa.org",
+        "@context": "https://schema.org",
         "@type":  ['Person', 'Organization'],
         "name": `${name}`,
         "url": `${$page.url.origin}`,
@@ -34,15 +35,14 @@
         ]
     };
     let jsonLdStrung = JSON.stringify(jsonLd);
-    let jsonLdScript = `
-    <script type="application/ld+json">
-        ${jsonLdStrung}
-    ${'<'}/script>`;
+    let jsonLdScript = `<script type="application/ld+json">${jsonLdStrung}${'<'}/script>`;
 </script>
 <svelte:head>
     {#if title !== ""}
         <meta name="robots" content={index ? "index, follow" : "noindex"} />
         <title>{title}</title>
+        <meta rel="canonical" content="{canonical === "" ? $page.url : canonical}" />
+
     {/if}
     {#if description !== ""}
         <meta name="description" content="{description}" />
