@@ -13,9 +13,10 @@
   <div class="container mx-auto px-4" style="font-family: Arial, sans-serif;">
     <div class="py-2">
         <!-- TODO add button for google title/header info with popup -->
-        <!-- <div class=" absolute top-0 right-0">
-            <button>i</button>
-        </div> -->
+        <div class="relative">
+            <button class="absolute top-0 right-0 bg-blue-500 text-white rounded-md px-4 py-2">i</button>
+        </div>
+
         <div class="flex overflow-hidden p-0 pb-0 items-center" >
             <div class="bg-white border border-solid inline-flex justify-center items-center rounded-full mr-3 h-[26px] w-[26px] shrink-0">
                 {#if icon !== ""}
