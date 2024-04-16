@@ -1,6 +1,5 @@
 <script>
-	import { Seo } from '$lib/Seo.svelte';
-	// import Seo from "sk-seo";
+	import Seo from "sk-seo";
 	import { onMount } from "svelte";
 	import { draw } from "svelte/transition";
 
@@ -10,19 +9,6 @@
 	onMount(() => {
 		drawPath = true;
 	})
-</script>
-<script context="module">
-    export async function load({ fetch }) {
-        const res = await fetch('https://bundlephobia.com/api/size?package=sk-seo');
-        const data = await res.json();
-		console.log(data);
-
-        if (res.ok) {
-            return { props: { gzip: data.gzip } };
-        } else {
-            this.error(res.status, data.message);
-        }
-    }
 </script>
 
 <Seo title="sk seo" description="A dead simple SEO component for SvelteKit" keywords="sveltekit, seo, skeleton, tiny, npm, sk-seo, package, library" />
