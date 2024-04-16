@@ -3,22 +3,28 @@
 This is a demo site for [sk-seo](https://github.com/TheDahoom/sk-seo). 
 
 ## Tech Stack
-- Framework: [SvelteKit](https://kit.svelte.dev/)
-- Styling: [TailwindCSS](https://tailwindcss.com/) (who needs vanilla css?)
-- Beautiful UI library: [Skeleton](https://skeleton.dev/)
-- Cool simple seo component: [sk-seo](https://github.com/TheDahoom/sk-seo) (I might be biased)
-- Hosted on: [Cloudflare pages](https://pages.cloudflare.com/)
+| Tech     | Url             |
+| ------------- | ----------------------- |
+| Framework | [SvelteKit](https://kit.svelte.dev/) |
+| Styling (who needs vanilla css?) | [TailwindCSS](https://tailwindcss.com/) |
+| Beautiful UI library | [Skeleton](https://skeleton.dev/) |
+| Cool simple seo component (I might be biased) | [sk-seo](https://github.com/TheDahoom/Sveltekit-seo) |
+| Hosted on | [Cloudflare pages](https://pages.cloudflare.com/) |
 
+## How to use
+
+Clone the repo 
+
+```sh
+$ git clone https://github.com/TheDahoom/zenorocha.com.git
+```
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've cloned the project run `pnpm install` then start a development server with:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm run dev
 ```
 
 ## Building
@@ -26,9 +32,7 @@ npm run dev -- --open
 To create a production version of your app:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
