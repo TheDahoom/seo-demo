@@ -1,6 +1,6 @@
 <script>
-	// import Seo from 'sk-seo';
-	import Seo from '$lib/Seo.svelte';
+	import Seo from 'sk-seo';
+	// import Seo from '$lib/Seo.svelte';
 	import '../app.postcss';
 	import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
