@@ -17,7 +17,7 @@
         <!-- TODO add button for google title/header info with popup -->
         <!-- Content: Google sometimes sets one of the headers as the title (highlighted in blue) and might also include header or paragraph content in the description aswell  -->
         <div class="relative">
-            <button class="absolute top-0 right-0 bg-none text-white rounded-md px-4 py-2"><InfoIcon /></button>
+            <button class="btn btn-sm absolute top-0 right-0 bg-none text-white rounded-md px-0 py-0"><InfoIcon /></button>
         </div>
 
         <div class="flex overflow-hidden p-0 pb-0 items-center" >
