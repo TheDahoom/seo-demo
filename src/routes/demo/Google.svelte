@@ -1,6 +1,7 @@
 <script>
   import InfoIcon from './InfoIcon.svelte';
 
+  import { popup } from '@skeletonlabs/skeleton';
   import { writable } from "svelte/store";
 
   export let title = writable("Quick Start");
@@ -9,6 +10,12 @@
 
   let icon;
   let dark = false;
+
+  const GoogleInfo = {
+	event: 'click',
+	target: 'GoogleInfo',
+	placement: 'bottom',
+};
 </script>
 
 <div class="bg-[#202124] rounded-xl">
@@ -17,9 +24,12 @@
         <!-- TODO add button for google title/header info with popup -->
         <!-- Content: Google sometimes sets one of the headers as the title (highlighted in blue) and might also include header or paragraph content in the description aswell  -->
         <div class="relative">
-            <button class="btn btn-sm absolute top-0 right-0 bg-none text-white rounded-md px-0 py-0"><InfoIcon /></button>
+            <button class="btn btn-sm absolute top-0 right-0 bg-none rounded-md px-0 py-0" use:popup={GoogleInfo} ><InfoIcon /></button>
         </div>
-
+        <div class="card p-4 shadow-xl" data-popup="GoogleInfo">
+            <div><p>Demo Content</p></div>
+            <div class="arrow bg-surface-100-800-token" />
+        </div>
         <div class="flex overflow-hidden p-0 pb-0 items-center" >
             <div class="bg-white border border-solid inline-flex justify-center items-center rounded-full mr-3 h-[26px] w-[26px] shrink-0">
                 {#if icon !== ""}
