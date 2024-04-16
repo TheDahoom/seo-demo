@@ -4,22 +4,24 @@
 	import '../app.postcss';
 	import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
-	
+
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 <Seo imageURL="/seo.png"
-logo="/favicon.png"
-author="Dahoom AlShaya"
-name="Dahoom AlShaya"
-socials={[
-	 'https://twitter.com/TheDahoom',
-	 'https://instagram.com/TheDahoom',
-	 'https://github.com/TheDahoom',
-	 'https://linkedin.com/in/dahoom'
-]} />
+	logo="/favicon.png"
+	author="Dahoom AlShaya"
+	name="Dahoom AlShaya"
+	socials={[
+		'https://dahoom.com',
+		'https://www.reddit.com/u/TheDahoom/',
+		'https://twitter.com/TheDahoom',
+		'https://instagram.com/TheDahoom',
+		'https://github.com/TheDahoom',
+		'https://linkedin.com/in/dahoom'
+	]} />
 <!-- App Shell -->
 <AppShell>
 	<svelte:fragment slot="header">
