@@ -29,7 +29,7 @@
 		<AppBar>
 			<svelte:fragment slot="lead">
 				<a href="/">
-					<strong class="text-xl">sk-seo</strong>
+					<strong class="text-xl whitespace-nowrap">sk-seo</strong>
 				</a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
