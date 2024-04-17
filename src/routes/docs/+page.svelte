@@ -18,6 +18,5 @@
         <CodeBlock language="xml" code={`<Seo title="Quick Start" \ndescription="Quick start webpage for sk-seo" \nkeywords="Quickstart, introduction" />`}></CodeBlock>
         <h3 class="h3">Thats all!</h3>
         <button class="btn variant-filled">Advanced use</button>
-
     </div>
 </div>
