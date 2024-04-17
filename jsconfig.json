@@ -8,7 +8,8 @@
 		"skipLibCheck": false,
 		"sourceMap": true,
 		"strict": false,
-		"moduleResolution": "bundler"
+		"moduleResolution": "bundler",
+		"module": "ESNext"
 	}
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
 	// except $lib which is handled by https://kit.svelte.dev/docs/configuration#files
