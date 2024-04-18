@@ -21,7 +21,7 @@
 </script>
 
 <Seo title="sk seo" description="A dead simple SEO component for SvelteKit" keywords="sveltekit, seo, skeleton, tiny, npm, sk-seo, package, library" />
-<div class="container h-full flex-col mx-auto flex justify-center items-center">
+<div class="container h-screen flex-col mx-auto flex justify-center items-center">
 	<div class=" text-center flex flex-col items-center">
 		<button on:click={() => {drawPath = !drawPath; setTimeout(() =>{drawPath = true}, 2000)}} class="scale-125 md:scale-[250%] mb-7">
 		{#if drawPath}
