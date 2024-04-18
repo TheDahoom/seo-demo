@@ -1,5 +1,6 @@
 <script>
 	import Seo from 'sk-seo';
+	import Nav from '../lib/nav/Nav.svelte';
 	// import Seo from '$lib/Seo.svelte';
 	import '../app.postcss';
 	import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
@@ -56,7 +57,7 @@
 		</AppBar>
 	</svelte:fragment>
 	<svelte:fragment slot="sidebarLeft">
-		<p>sidebar thing</p>
+		<Nav />
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
