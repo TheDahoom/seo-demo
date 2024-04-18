@@ -1,5 +1,5 @@
 <script>
-  import InfoIcon from './InfoIcon.svelte';
+  import InfoIcon from '$lib/Icons/InfoIcon.svelte';
 
   import { popup } from '@skeletonlabs/skeleton';
   import { writable } from "svelte/store";

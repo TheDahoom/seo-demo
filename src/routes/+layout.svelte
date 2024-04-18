@@ -1,4 +1,6 @@
 <script>
+  import GithubIcon from '$lib/Icons/GithubIcon.svelte';
+
 	import Seo from 'sk-seo';
 	import Nav from '../lib/nav/Nav.svelte';
 	// import Seo from '$lib/Seo.svelte';
@@ -18,7 +20,7 @@
 	hljs.registerLanguage('shell', shell);
 	hljs.registerLanguage('javascript', javascript);
 	storeHighlightJs.set(hljs);
-	
+
 	//Drawer init
 	initializeStores();
 	const drawerStore = getDrawerStore();
@@ -71,6 +73,7 @@
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<LightSwitch />
+				<a class="" href="/docs" ><GithubIcon /></a>
 				<!-- TODO: set buttons in middle with better styling -->
 				
 				<!-- <a class="btn btn-sm variant-ghost-surface" href="/docs" > docs </a>
