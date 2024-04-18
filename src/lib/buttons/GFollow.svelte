@@ -1,7 +1,8 @@
 <script>
     import { onMount } from "svelte";
     import GithubIcon from "../Icons/GithubIcon.svelte";
-  
+    
+    export let data;
     let followCount;
 
     onMount(async () => {
@@ -17,7 +18,7 @@
         <GithubIcon classes={"scale-[75%] -ml-1"} />
         Follow
     </button>
-      <div class="input-group-shim !px-2"> {followCount || 2}</div>
+      <div class="input-group-shim !px-2"> {(followCount || data.followCount) || 2}</div>
   </a>
   
   

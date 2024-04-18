@@ -2,13 +2,13 @@
   import { onMount } from "svelte";
   import StarIcon from "../Icons/StarIcon.svelte";
 
+	export let data;
 	let starCount;
 
 	onMount(async () => {
 		const response = await fetch('https://api.github.com/repos/TheDahoom/sveltekit-seo');
-		const data = await response.json();
-		starCount = data.stargazers_count;
-		console.log(data);
+		const ret = await response.json();
+		starCount = ret.stargazers_count;
 	});
 </script>
 
@@ -17,6 +17,6 @@
 		<StarIcon classes={"scale-[75%] -ml-1"} />
 		Star
 	</button>
-	<div class="input-group-shim !px-2"> {starCount || 52}</div>
+	<div class="input-group-shim !px-2"> {(starCount || data.starCount ) || 52 }</div>
 </a>
 
