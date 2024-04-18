@@ -6,11 +6,18 @@
 	import { CodeBlock } from "@skeletonlabs/skeleton";
 
     export let data;
+
 	let drawPath = false;
-	
+	let installSection;
+
+	function scrollToInstall() {
+		installSection.scrollIntoView({ behavior: 'smooth' });
+	}
+
 	onMount(() => {
 		drawPath = true;
 	})
+
 </script>
 
 <Seo title="sk seo" description="A dead simple SEO component for SvelteKit" keywords="sveltekit, seo, skeleton, tiny, npm, sk-seo, package, library" />
@@ -25,15 +32,15 @@
 		<i class="h5 mb-2">No dependencies and only {data.props.gzip}kb gzipped!</i>
 		<!-- TODO: ADD star and follow gh buttons -->
 
-		<div class="animate-bounce mt-4 rotate-180" style="rotate: 180deg">
+		<button on:click={scrollToInstall} class="animate-bounce mt-4 rotate-180" style="rotate: 180deg">
 			<svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5"  fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M12 21L12 3M12 3L20.5 11.5M12 3L3.5 11.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-		</div>
+		</button>
 	</div>
 </div>
 <div class="w-full top-0  flex justify-center items-center">
 	<div class="space-y-5 mx-2 flex flex-col items-center">
         <!-- <h2 class="h2 mt-7">Quick Start</h2> -->
-        <h3 class="h3">Install</h3>
+        <h3 class="h3" bind:this={installSection} >Install</h3>
         <CodeBlock class={'w-full'} language="shell" code={`npm i -D sk-seo`}></CodeBlock>
         <h3 class="h3">import</h3>
         <CodeBlock class={'w-full'} language="javascript" code={`import Seo from 'sk-seo';`}></CodeBlock>
