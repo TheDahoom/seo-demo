@@ -31,6 +31,8 @@
 		'https://linkedin.com/in/dahoom'
 	]} />
 <Drawer>
+	<h2 class="p-4">Navigation</h2>
+	<hr />
 	<Nav />
 </Drawer>
 <!-- App Shell -->
