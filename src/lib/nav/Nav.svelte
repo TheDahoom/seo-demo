@@ -2,7 +2,7 @@
 
 </script>
 
-<nav>
+<nav class="list-nav">
     <ul>
         <li><a href="/docs">Docs</a></li>
         <li><a href="/demo">Demo</a></li>
