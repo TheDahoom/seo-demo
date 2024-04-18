@@ -55,6 +55,9 @@
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
+	<svelte:fragment slot="sidebarLeft">
+		<p>sidebar thing</p>
+	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
 </AppShell>
