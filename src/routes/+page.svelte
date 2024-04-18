@@ -6,6 +6,7 @@
 	import { onMount } from "svelte";
 	import { draw } from "svelte/transition";
 	import { CodeBlock } from "@skeletonlabs/skeleton";
+  import GFollow from '../lib/buttons/GFollow.svelte';
 
     export let data;
 
@@ -33,7 +34,10 @@
 		<h2 class="h2 mt-2 px-2 md:mt-10">A dead simple SEO component for SvelteKit</h2>
 		<i class="h5 mb-2">No dependencies and only {data.props.gzip}kb gzipped!</i>
 		<!-- TODO: ADD star and follow gh buttons -->
-		<GStar></GStar>
+		<div class="flex flex-row space-x-2">
+			<GStar />
+			<GFollow />
+		</div>
 		<button on:click={scrollToInstall} class="animate-bounce mt-4 rotate-180" style="rotate: 180deg">
 			<svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5"  fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M12 21L12 3M12 3L20.5 11.5M12 3L3.5 11.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 		</button>
