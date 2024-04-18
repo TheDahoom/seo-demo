@@ -3,6 +3,7 @@
 	import Seo from "sk-seo";
 	import { onMount } from "svelte";
 	import { draw } from "svelte/transition";
+	import { CodeBlock } from "@skeletonlabs/skeleton";
 
     export let data;
 	let drawPath = false;
@@ -13,7 +14,7 @@
 </script>
 
 <Seo title="sk seo" description="A dead simple SEO component for SvelteKit" keywords="sveltekit, seo, skeleton, tiny, npm, sk-seo, package, library" />
-<div class="container h-full mx-auto flex justify-center items-center">
+<div class="container h-full flex-col mx-auto flex justify-center items-center">
 	<div class=" text-center flex flex-col items-center">
 		<button on:click={() => {drawPath = !drawPath; setTimeout(() =>{drawPath = true}, 2000)}} class="scale-125 md:scale-[250%] mb-7">
 		{#if drawPath}
@@ -38,4 +39,17 @@
 		</a>
 		</div>
 	</div>
+</div>
+<div class="w-full top-0  flex justify-center items-center">
+	<div class="space-y-5 mx-2 flex flex-col items-center">
+        <!-- <h2 class="h2 mt-7">Quick Start</h2> -->
+        <h3 class="h3">Install</h3>
+        <CodeBlock class={'w-full'} language="shell" code={`npm i -D sk-seo`}></CodeBlock>
+        <h3 class="h3">import</h3>
+        <CodeBlock class={'w-full'} language="javascript" code={`import Seo from 'sk-seo';`}></CodeBlock>
+        <h3 class="h3">Use</h3>
+        <CodeBlock language="xml" code={`<Seo title="Quick Start" \ndescription="Quick start webpage for sk-seo" \nkeywords="Quickstart, introduction" />`}></CodeBlock>
+        <h3 class="h3">Thats all!</h3>
+        <button class="btn variant-filled">Advanced use</button>
+    </div>
 </div>
