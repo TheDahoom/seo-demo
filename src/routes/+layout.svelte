@@ -24,7 +24,7 @@
 		'https://linkedin.com/in/dahoom'
 	]} />
 <!-- App Shell -->
-<AppShell slotSidebarLeft="bg-surface-500/5 p-0 w-0 lg:w-56 lg:p-2">
+<AppShell slotSidebarLeft="bg-surface-500/5 w-0 lg:w-64">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<AppBar>

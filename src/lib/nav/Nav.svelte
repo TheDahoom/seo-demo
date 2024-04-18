@@ -2,7 +2,7 @@
 
 </script>
 
-<nav class="list-nav">
+<nav class="list-nav p-2">
     <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/docs">Docs</a></li>
