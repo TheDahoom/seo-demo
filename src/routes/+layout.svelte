@@ -29,9 +29,20 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<a href="/">
-					<strong class="text-xl whitespace-nowrap">sk-seo</strong>
-				</a>
+				<div class="flex items-center">
+					<button class="lg:hidden btn btn-sm mr-2">
+						<span>
+							<svg viewBox="0 0 100 80" class="fill-token w-4 h-4">
+								<rect width="100" height="20" />
+								<rect y="30" width="100" height="20" />
+								<rect y="60" width="100" height="20" />
+							</svg>
+						</span>
+					</button>
+					<a href="/">
+						<strong class="text-xl whitespace-nowrap">sk-seo</strong>
+					</a>
+				</div>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<LightSwitch />
