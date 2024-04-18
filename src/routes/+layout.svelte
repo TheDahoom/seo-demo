@@ -46,24 +46,11 @@
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<LightSwitch />
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="/docs"
-				>
-					docs
-				</a>
-				<a
-				class="btn btn-sm variant-ghost-surface {$page.path === '/' ? 'active' : ''}"
-				href="/demo"
-				>
-					demo
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="/test"
-				>
-					test
-				</a>
+				<!-- TODO: set buttons in middle with better styling -->
+				
+				<!-- <a class="btn btn-sm variant-ghost-surface" href="/docs" > docs </a>
+				<a class="btn btn-sm variant-ghost-surface {$page.path === '/' ? 'active' : ''}" href="/demo" > demo </a>
+				<a class="btn btn-sm variant-ghost-surface" href="/test" > test </a> -->
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
