@@ -40,8 +40,7 @@
         <h3 class="h3">Use</h3>
         <CodeBlock language="xml" code={`<Seo title="Quick Start" \ndescription="Quick start webpage for sk-seo" \nkeywords="Quickstart, introduction" />`}></CodeBlock>
         <h3 class="h3">Thats all!</h3>
-        <button class="btn variant-filled">Advanced use</button>
-		<div class="flex justify-center space-x-2">
+		<div class="flex justify-center space-x-2 pb-8">
 			<a
 				class="btn variant-filled"
 				href="/docs"
