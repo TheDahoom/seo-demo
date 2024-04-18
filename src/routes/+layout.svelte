@@ -3,8 +3,15 @@
 	import Nav from '../lib/nav/Nav.svelte';
 	// import Seo from '$lib/Seo.svelte';
 	import '../app.postcss';
-	import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
+	import { AppShell, AppBar, LightSwitch, initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
+
+	//Drawer init
+	initializeStores();
+	const drawerStore = getDrawerStore();
+	function drawerOpen(){
+		drawerStore.open();
+	}
 
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
@@ -23,6 +30,7 @@
 		'https://github.com/TheDahoom',
 		'https://linkedin.com/in/dahoom'
 	]} />
+<Drawer>contents</Drawer>
 <!-- App Shell -->
 <AppShell slotSidebarLeft="bg-surface-500/5 w-0 lg:w-64">
 	<svelte:fragment slot="header">
@@ -30,7 +38,7 @@
 		<AppBar>
 			<svelte:fragment slot="lead">
 				<div class="flex items-center">
-					<button class="lg:hidden btn btn-sm mr-2">
+					<button class="lg:hidden btn btn-sm mr-2" on:click={drawerOpen}>
 						<span>
 							<svg viewBox="0 0 100 80" class="fill-token w-4 h-4">
 								<rect width="100" height="20" />
