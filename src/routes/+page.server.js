@@ -4,8 +4,16 @@ export async function load({ fetch }) {
     const data = await res.json();
     const gzip = (data.gzip / 1000).toFixed(1);
 
+    const res2 = await fetch('https://api.github.com/repos/TheDahoom/sveltekit-seo');
+    const data2 = await res2.json();
+    const starCount = data.stargazers_count;
+    
+    const res3 = await fetch('https://api.github.com/repos/TheDahoom/followers');
+    const data3 = await res3.json();
+    const followerCount = data3.length;
+
     if (res.ok) {
-        return { props: { gzip } };
+        return { gzip, starCount, followerCount };
     } else {
         this.error(res.status, data.message);
     }
