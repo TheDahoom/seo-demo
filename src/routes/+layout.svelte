@@ -23,7 +23,7 @@
 		'https://linkedin.com/in/dahoom'
 	]} />
 <!-- App Shell -->
-<AppShell>
+<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<AppBar>
