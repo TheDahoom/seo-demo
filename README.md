@@ -1,6 +1,6 @@
 # SEO demo
 
-This is a demo site for [sk-seo](https://github.com/TheDahoom/sk-seo). 
+This is a demo site for [sk-seo](https://github.com/TheDahoom/sk-seo). A dead simple, no dependencies, svelte component that automates a lot of the annoying SEO parts for you. Also optionally includes functionality for social media preview support
 
 ## Tech Stack
 | Tech     | Url             |
@@ -16,7 +16,7 @@ This is a demo site for [sk-seo](https://github.com/TheDahoom/sk-seo).
 Clone the repo 
 
 ```sh
-$ git clone https://github.com/TheDahoom/zenorocha.com.git
+$ git clone https://github.com/TheDahoom/seo-demo.git
 ```
 
 ## Developing
