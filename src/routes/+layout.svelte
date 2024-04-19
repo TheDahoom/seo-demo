@@ -73,6 +73,9 @@
 					</a>
 				</div>
 			</svelte:fragment>
+			<div class="text-center hidden md:block">
+				hi
+			</div>
 			<svelte:fragment slot="trail">
 				<LightSwitch />
 				<a target="_blank" href="https://github.com/Thedahoom/sveltekit-seo" ><GithubIcon /></a>
