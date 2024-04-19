@@ -77,11 +77,13 @@
 				</div>
 			</svelte:fragment>
 			<!-- Bruteforcing centering on desktop with ml-14 because my brain is fried -->
-			<div class="ml-14 text-center hidden md:block">
+			{#if !$page.url.pathname.includes('/docs')}
+			<div class="ml-0 lg:ml-14 text-center hidden md:block">
 				{#each routes as route}
 					<a class="btn btn-md rounded-none {$page.url.pathname === route.path ? ' border-b border-b-current' : ''}" href="{route.path}">{route.name}</a>
 				{/each}
 			</div>
+			{/if}
 			<svelte:fragment slot="trail">
 				<LightSwitch />
 				<a target="_blank" href="https://github.com/Thedahoom/sveltekit-seo" ><GithubIcon /></a>
