@@ -1,5 +1,5 @@
 <script>
-  import GithubIcon from '$lib/Icons/GithubIcon.svelte';
+	import GithubIcon from '$lib/Icons/GithubIcon.svelte';
 
 	import Seo from 'sk-seo';
 	import Nav from '../lib/nav/Nav.svelte';
