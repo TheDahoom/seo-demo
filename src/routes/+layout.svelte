@@ -35,16 +35,6 @@
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
-<script context="module">
-    export async function load({ page, fetch, session }) {
-		if (page.href.includes('pages.dev')){
-			return {
-				status: 301,
-				redirect: 'https://skseo.dev'+page.path
-			};
-		}
-    }
-</script>
 <Seo imageURL="/seo.png"
 	logo="/favicon.png"
 	author="Dahoom AlShaya"
