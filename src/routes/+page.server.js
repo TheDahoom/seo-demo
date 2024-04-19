@@ -12,6 +12,7 @@ export async function load({ fetch }) {
     const data3 = await res3.json();
     const followerCount = data3.length;
 
+
     if (res.ok) {
         return { gzip, starCount, followerCount };
     } else {

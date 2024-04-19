@@ -9,6 +9,8 @@
 	import { AppShell, AppBar, LightSwitch, initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
 
+	export let data;
+
 	$: classesSidebar = !$page.url.pathname.includes('/docs') ? 'w-0' : 'w-0 lg:w-64';
 
 	//hljs stuff for code blocks
@@ -75,10 +77,10 @@
 				</div>
 			</svelte:fragment>
 			<div class="text-center hidden md:block">
-				<a href="/">home</a>
-				<a href="/docs">docs</a>
-				<a href="/demo">demo</a>
-				<a href="/test">test</a>
+				<a class="btn btn-md variant-ghost py-0" href="/">home</a>
+				<a class="btn btn-md variant-ghost py-0" href="/docs">docs</a>
+				<a class="btn btn-md variant-ghost py-0" href="/demo">demo</a>
+				<a class="btn btn-md variant-ghost py-0" href="/test">test</a>
 			</div>
 			<svelte:fragment slot="trail">
 				<LightSwitch />
@@ -91,7 +93,7 @@
 	</svelte:fragment>
 	<slot />
 	<svelte:fragment slot="pageFooter">
-		<Footer />
+		<Footer version={data.version} />
 	</svelte:fragment>
 	
 </AppShell>
