@@ -7,6 +7,7 @@
 	import '../app.postcss';
 	import { AppShell, AppBar, LightSwitch, initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
+	import { redirect } from '@sveltejs/kit';
 
 	$: classesSidebar = $page.url.pathname === '/' || 'demo' ? 'w-0' : 'w-0 lg:w-64';
 
@@ -41,7 +42,6 @@
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
-  import { redirect } from '@sveltejs/kit';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 <Seo imageURL="/seo.png"
