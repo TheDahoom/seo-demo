@@ -13,7 +13,8 @@
         <a href="https://github.com/TheDahoom/Sveltekit-seo?tab=MIT-1-ov-file#readme" class="hidden md:block">MIT License</a>
         <div class="text-center flex flex-row flex-wrap">
             <a href="https://github.com/TheDahoom/Sveltekit-seo?tab=MIT-1-ov-file#readme" class="btn md:hidden block">MIT License</a>
-            <a href="https://github.com/TheDahoom/Sveltekit-seo" class="btn md:block hidden">github</a>
+            <a href="https://github.com/TheDahoom/Sveltekit-seo" class="btn">github</a>
+            <a href="https://dahoom.com" class="btn">dahoom</a>
         </div>
     </div>
 </div>
