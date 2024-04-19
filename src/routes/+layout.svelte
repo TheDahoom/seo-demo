@@ -76,9 +76,10 @@
 					</a>
 				</div>
 			</svelte:fragment>
-			<div class="text-center hidden md:block">
+			<!-- Bruteforcing centering on desktop with ml-14 because my brain is fried -->
+			<div class="ml-14 text-center hidden md:block">
 				{#each routes as route}
-					<a class="btn btn-md" href="{route.path}">{route.name}</a>
+					<a class="btn btn-md rounded-none {$page.url.pathname === route.path ? ' border-b border-b-current' : ''}" href="{route.path}">{route.name}</a>
 				{/each}
 			</div>
 			<svelte:fragment slot="trail">
