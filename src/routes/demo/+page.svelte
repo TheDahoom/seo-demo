@@ -29,6 +29,9 @@
         <div class="h4 font-bold">Google</div>
         <Google title={title} description={description} keywords={keywords} />
         <div class="h4 font-bold">Discord</div>
+        <article class="w-max-[432px] border-l-4" style="background: hsl( 220 calc( 1 * 6.5%) 18% / 1); border-left-color: hsl( 225 calc( 1 * 6.3%) 12.5% / 1);">
+            hello
+        </article>
         <div class="h4 font-bold">Twitter</div>
 
     </div>
