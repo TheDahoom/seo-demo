@@ -14,9 +14,9 @@
 	console.log('pageurl=' + $page.url);
 	console.log('pageurlhost=' + $page.url.host);
 	console.log('pageurlhostname=' + $page.url.hostname);
-	if ($page.url.host == 'sk-seo.pages.dev'){
-		redirect('https://skseo.dev');
-	}
+	// if ($page.url.host == 'sk-seo.pages.dev'){
+	// 	redirect('https://skseo.dev');
+	// }
 
 	//hljs stuff for code blocks
 	import hljs from 'highlight.js/lib/core';
