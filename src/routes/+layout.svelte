@@ -7,8 +7,8 @@
 	// import Seo from '$lib/Seo.svelte';
 	import '../app.postcss';
 	import { AppShell, AppBar, LightSwitch, initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
+	import { routes } from '$lib/page/navigation';
 	import { page } from '$app/stores';
-
 	export let data;
 
 	$: classesSidebar = !$page.url.pathname.includes('/docs') ? 'w-0' : 'w-0 lg:w-64';
@@ -77,10 +77,13 @@
 				</div>
 			</svelte:fragment>
 			<div class="text-center hidden md:block">
-				<a class="btn btn-md variant-ghost py-0" href="/">home</a>
-				<a class="btn btn-md variant-ghost py-0" href="/docs">docs</a>
-				<a class="btn btn-md variant-ghost py-0" href="/demo">demo</a>
-				<a class="btn btn-md variant-ghost py-0" href="/test">test</a>
+				{#each routes as route}
+					<a class="btn btn-md" href="{route.path}">{route.name}</a>
+				{/each}
+				<a class="btn btn-md" href="/">home</a>
+				<a class="btn btn-md" href="/docs">docs</a>
+				<a class="btn btn-md" href="/demo">demo</a>
+				<a class="btn btn-md" href="/test">test</a>
 			</div>
 			<svelte:fragment slot="trail">
 				<LightSwitch />
