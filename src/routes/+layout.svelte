@@ -2,7 +2,8 @@
 	import GithubIcon from '$lib/Icons/GithubIcon.svelte';
 
 	import Seo from 'sk-seo';
-	import Nav from '../lib/nav/Nav.svelte';
+	import Nav from '$lib/nav/Nav.svelte';
+	import Footer from '$lib/page/Footer.svelte';
 	// import Seo from '$lib/Seo.svelte';
 	import '../app.postcss';
 	import { AppShell, AppBar, LightSwitch, initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
@@ -89,5 +90,8 @@
 		<Nav />
 	</svelte:fragment>
 	<slot />
+	<svelte:fragment slot="pageFooter">
+		<Footer />
+	</svelte:fragment>
 	
 </AppShell>
