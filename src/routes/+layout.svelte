@@ -11,7 +11,10 @@
 	$: classesSidebar = $page.url.pathname === '/' || 'demo' ? 'w-0' : 'w-0 lg:w-64';
 
 	// fix google shenanigans
-	if ($page.url.host.includes('pages.dev')){
+	console.log('pageurl=' + $page.url);
+	console.log('pageurlhost=' + $page.url.host);
+	console.log('pageurlhostname=' + $page.url.hostname);
+	if ($page.url.host == 'sk-seo.pages.dev'){
 		redirect('https://skseo.dev');
 	}
 
