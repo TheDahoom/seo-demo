@@ -10,6 +10,11 @@
 
 	$: classesSidebar = $page.url.pathname === '/' || 'demo' ? 'w-0' : 'w-0 lg:w-64';
 
+	// fix google shenanigans
+	if ($page.url.host.includes('pages.dev')){
+		redirect('https://skseo.dev');
+	}
+
 	//hljs stuff for code blocks
 	import hljs from 'highlight.js/lib/core';
 	import 'highlight.js/styles/github-dark.css';
@@ -33,6 +38,7 @@
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
+  import { redirect } from '@sveltejs/kit';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 <Seo imageURL="/seo.png"
