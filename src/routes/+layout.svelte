@@ -80,10 +80,6 @@
 				{#each routes as route}
 					<a class="btn btn-md" href="{route.path}">{route.name}</a>
 				{/each}
-				<a class="btn btn-md" href="/">home</a>
-				<a class="btn btn-md" href="/docs">docs</a>
-				<a class="btn btn-md" href="/demo">demo</a>
-				<a class="btn btn-md" href="/test">test</a>
 			</div>
 			<svelte:fragment slot="trail">
 				<LightSwitch />
