@@ -82,13 +82,12 @@
 			<svelte:fragment slot="trail">
 				<LightSwitch />
 				<a target="_blank" href="https://github.com/Thedahoom/sveltekit-seo" ><GithubIcon /></a>
-				<!-- TODO: set buttons in middle with better styling -->
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
 	<svelte:fragment slot="sidebarLeft">
 		<Nav />
 	</svelte:fragment>
-	<!-- Page Route Content -->
 	<slot />
+	
 </AppShell>
