@@ -8,7 +8,7 @@
 	import { AppShell, AppBar, LightSwitch, initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
 
-	$: classesSidebar = $page.url.pathname === '/' || 'demo' ? 'w-0' : 'w-0 lg:w-64';
+	$: classesSidebar = !$page.url.pathname.includes('/docs') ? 'w-0' : 'w-0 lg:w-64';
 
 	//hljs stuff for code blocks
 	import hljs from 'highlight.js/lib/core';
@@ -74,7 +74,10 @@
 				</div>
 			</svelte:fragment>
 			<div class="text-center hidden md:block">
-				hi
+				<a href="/">home</a>
+				<a href="/docs">docs</a>
+				<a href="/demo">demo</a>
+				<a href="/test">test</a>
 			</div>
 			<svelte:fragment slot="trail">
 				<LightSwitch />
