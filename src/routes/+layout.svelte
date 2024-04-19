@@ -7,17 +7,8 @@
 	import '../app.postcss';
 	import { AppShell, AppBar, LightSwitch, initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
-	import { redirect } from '@sveltejs/kit';
 
 	$: classesSidebar = $page.url.pathname === '/' || 'demo' ? 'w-0' : 'w-0 lg:w-64';
-
-	// fix google shenanigans
-	console.log('pageurl=' + $page.url);
-	console.log('pageurlhost=' + $page.url.host);
-	if ($page.url.host.includes('pages.dev')){
-		console.log('includes pages.dev')
-		redirect(301,'https://skseo.dev');
-	}
 
 	//hljs stuff for code blocks
 	import hljs from 'highlight.js/lib/core';

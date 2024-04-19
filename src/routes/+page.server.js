@@ -1,5 +1,14 @@
+import { page } from '$app/stores';
+import { redirect } from '@sveltejs/kit';
+
 // This file fetches the package size from an api at build time and returns it as a prop to the page
 export async function load({ fetch }) {
+    // -- temp start fix google shenanigans
+	if ($page.url.host.includes('pages.dev')){
+		console.log('includes pages.dev')
+		redirect(301,'https://skseo.dev'+$page.url.pathname);
+	}
+    // -- temp end
     const res = await fetch('https://bundlephobia.com/api/size?package=sk-seo');
     const data = await res.json();
     const gzip = (data.gzip / 1000).toFixed(1);
