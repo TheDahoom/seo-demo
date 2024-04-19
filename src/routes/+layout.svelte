@@ -15,7 +15,7 @@
 	console.log('pageurlhost=' + $page.url.host);
 	if ($page.url.host.includes('pages.dev')){
 		console.log('includes pages.dev')
-		// redirect('https://skseo.dev');
+		redirect('https://skseo.dev');
 	}
 
 	//hljs stuff for code blocks
