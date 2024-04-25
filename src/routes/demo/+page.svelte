@@ -25,9 +25,8 @@
         </div>
     </div>
     <div class="outline-dotted h-full w-full p-4">
-        <!-- just prop by itself wouldnt work for some reason -->
         <div class="h4 font-bold">Google</div>
-        <Google title={title} description={description} keywords={keywords} />
+        <Google {title} {description} {keywords} />
         <div class="h4 font-bold">Discord</div>
         <article class="w-max-[432px] border-l-4" style="background: hsl( 220 calc( 1 * 6.5%) 18% / 1); border-left-color: hsl( 225 calc( 1 * 6.3%) 12.5% / 1);">
             hello
