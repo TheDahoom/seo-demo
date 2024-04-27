@@ -26,7 +26,7 @@
     description="Test the SEO viability of your site"
     keywords="test, seo, skeleton"
 />
-<div class="h-full md:h-screen mx-auto flex justify-center items-center">
+<div class="h-screen mx-auto flex justify-center items-center">
     <div class="space-y-10 text-center flex flex-col items-center">
         <h3 class="h3">Test SEO viability of your site</h3>
         <div class="input-group flex input-group-divider grid-cols-[auto_1fr_auto]">
