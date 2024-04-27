@@ -1,7 +1,7 @@
 <script>
     export let version;
 </script>
-<div class="w-full flex flex-col justify-end min-h-40 z-50 variant-glass-surface !backdrop-blur-sm relative p-6 md:p-8">
+<div class="w-full flex flex-col justify-end min-h-40 z-30 variant-glass-surface !backdrop-blur-sm relative p-6 md:p-8">
     <div class="absolute top-0 left-0 pointer-events-none w-full h-full opacity-10 bg-gradient-to-b from-transparent to-surface-500"></div>
     <div class="flex justify-center md:justify-between pb-2">
         <div>
