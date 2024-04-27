@@ -7,7 +7,7 @@
     description="Getting started with sk-seo"
     keywords="sveltekit, seo, skeleton"
 />
-<div class="w-full h-full  flex justify-center items-center">
+<div class="w-full h-full mb-5 flex justify-center items-center">
 	<div class="space-y-5 mx-2 flex flex-col items-center">
         <h2 class="h2 mt-7">Quick Start</h2>
         <h3 class="h3">Install</h3>
