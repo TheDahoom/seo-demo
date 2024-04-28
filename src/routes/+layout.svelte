@@ -86,7 +86,7 @@
 			{/if}
 			<svelte:fragment slot="trail">
 				<LightSwitch />
-				<a target="_blank" href="https://github.com/Thedahoom/sveltekit-seo" ><GithubIcon /></a>
+				<a target="_blank" href="https://github.com/Thedahoom/sveltekit-seo" ><GithubIcon classes="hover:text-secondary-500 transition" /></a>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
