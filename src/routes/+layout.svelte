@@ -50,7 +50,7 @@
 		'https://github.com/TheDahoom',
 		'https://linkedin.com/in/dahoom'
 	]} />
-<Drawer>
+<Drawer width="w-3/4 md:w-3/5" >
 	<h2 class="p-4">Navigation</h2>
 	<hr />
 	<Nav />
