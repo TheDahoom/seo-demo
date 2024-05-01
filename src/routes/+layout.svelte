@@ -81,7 +81,7 @@
 				</div>
 			</svelte:fragment>
 			{#if $page.url.pathname !== '/' && showBanner !== false}
-				<aside class="alert variant-filled-warning fixed top-16" transition:fade|local={{ duration: 200 }}>
+				<aside class="alert variant-filled-warning fixed top-16 left-1/2 -translate-x-1/2" transition:fade|local={{ duration: 200 }}>
 					<!-- Icon
 					<div>!</div> -->
 					<!-- Message -->
