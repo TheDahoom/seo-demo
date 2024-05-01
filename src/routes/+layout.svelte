@@ -11,6 +11,7 @@
 	import { page } from '$app/stores';
 	export let data;
 
+	let showBanner = true;
 	$: classesSidebar = !$page.url.pathname.includes('/docs') ? 'w-0' : 'w-0 lg:w-64';
 
 	//hljs stuff for code blocks
@@ -76,8 +77,24 @@
 					</a>
 				</div>
 			</svelte:fragment>
-			<!-- Bruteforcing centering on desktop with ml-14 because my brain is fried -->
+			{#if $page.url.pathname !== '/' && showBanner !== false}
+				<aside class="alert variant-filled-warning fixed top-16">
+					<!-- Icon
+					<div>!</div> -->
+					<!-- Message -->
+					<div class="alert-message">
+						<h3 class="h3">Warning</h3>
+						<p>This section of the site is still under construction</p>
+					</div>
+					<!-- Actions -->
+					<div class="alert-actions">
+						<a href="https://github.com/TheDahoom/seo-demo" target="_blank">contribute</a>
+						<button >close</button>
+					</div>
+				</aside>
+			{/if}
 			{#if !$page.url.pathname.includes('/docs')}
+			<!-- Bruteforcing centering on desktop with ml-14 because my brain is fried -->
 			<div class="ml-0 lg:ml-14 text-center hidden md:block">
 				{#each routes as route}
 					<a class="btn btn-md rounded-none {$page.url.pathname === route.path ? ' border-b border-b-current' : ''}" href="{route.path}">{route.name}</a>
