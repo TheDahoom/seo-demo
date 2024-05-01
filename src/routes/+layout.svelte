@@ -9,9 +9,11 @@
 	import { AppShell, AppBar, LightSwitch, initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 	import { routes } from '$lib/page/navigation';
 	import { page } from '$app/stores';
+	import { fade } from 'svelte/transition';
 	export let data;
 
 	let showBanner = true;
+
 	$: classesSidebar = !$page.url.pathname.includes('/docs') ? 'w-0' : 'w-0 lg:w-64';
 
 	//hljs stuff for code blocks
@@ -37,6 +39,7 @@
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
+    import { onMount } from 'svelte';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 <Seo imageURL="/seo.png"
@@ -78,18 +81,18 @@
 				</div>
 			</svelte:fragment>
 			{#if $page.url.pathname !== '/' && showBanner !== false}
-				<aside class="alert variant-filled-warning fixed top-16">
+				<aside class="alert variant-filled-warning fixed top-16" transition:fade|local={{ duration: 200 }}>
 					<!-- Icon
 					<div>!</div> -->
 					<!-- Message -->
 					<div class="alert-message">
 						<h3 class="h3">Warning</h3>
-						<p>This section of the site is still under construction</p>
+						<p>Most sections of the site is still under construction</p>
 					</div>
 					<!-- Actions -->
 					<div class="alert-actions">
-						<a href="https://github.com/TheDahoom/seo-demo" target="_blank">contribute</a>
-						<button >close</button>
+						<a class="btn variant-filled" href="https://github.com/TheDahoom/seo-demo" target="_blank">contribute</a>
+						<button class="btn variant-filled" on:click={() => {showBanner = !showBanner}} >close</button>
 					</div>
 				</aside>
 			{/if}
