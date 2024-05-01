@@ -87,7 +87,7 @@
 					<!-- Message -->
 					<div class="alert-message">
 						<h3 class="h3">Warning</h3>
-						<p>Most sections of the site is still under construction</p>
+						<p>Most sections of the site are still under construction</p>
 					</div>
 					<!-- Actions -->
 					<div class="alert-actions">
