@@ -14,7 +14,7 @@
         <div class="text-center flex flex-row flex-wrap">
             <a href="https://github.com/TheDahoom/Sveltekit-seo?tab=MIT-1-ov-file#readme" class="btn md:hidden block">MIT License</a>
             <a href="https://github.com/TheDahoom/Sveltekit-seo" class="btn">github</a>
-            <a href="https://dahoom.com" class="btn">dahoom</a>
+            <a href="https://github.com/TheDahoom/seo-demo" class="btn">site repo</a>
         </div>
     </div>
 </div>
