@@ -34,6 +34,7 @@
             `${socialsString}`
         ]
     };
+    console.log(JSON.stringify(jsonLd));
     let jsonLdScript = `<script type="application/ld+json">${JSON.stringify(jsonLd)}${'<'}/script>`;
 </script>
 <svelte:head>
