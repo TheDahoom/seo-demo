@@ -15,10 +15,11 @@
     export let author = "";
     export let socials = [];
     export let name = "";
+    export let jsonLd = [];
 
     let socialsString = socials.join(", ");
 
-    let jsonLd = {
+    let Ld = {
         "@context": "https://schema.org",
         "@type":  ['Person', 'Organization'],
         "name": `${name}`,
@@ -33,16 +34,16 @@
         "sameAs": [
             `${socialsString}`
         ]
+        `${jsonLd}`
     };
-    console.log(JSON.stringify(jsonLd));
-    let jsonLdScript = `<script type="application/ld+json">${JSON.stringify(jsonLd)}${'<'}/script>`;
+    console.log(jsonLd);
+    let jsonLdScript = `<script type="application/ld+json">${JSON.stringify(Ld)}${'<'}/script>`;
 </script>
 <svelte:head>
     {#if title !== ""}
         <meta name="robots" content={index ? "index, follow" : "noindex"} />
         <title>{title}</title>
         <meta rel="canonical" content="{canonical === "" ? $page.url : canonical}" />
-
     {/if}
     {#if description !== ""}
         <meta name="description" content="{description}" />
@@ -91,6 +92,11 @@
 
     <!-- JSON-LD Schema -->
     {#if schemaOrg || socials[0] !== undefined || logo !== "" || name !== ""}
+    <script type="application/ld+json">
+        "@context": "https://schema.org",
+        "@type":  ['Person', 'Organization'],
+        "name": {name},
+    </script>
         {@html jsonLdScript}
     {/if}
 </svelte:head>
