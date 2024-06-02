@@ -47,8 +47,8 @@ devDependencies:
     specifier: 8.4.38
     version: 8.4.38
   sk-seo:
-    specifier: ^0.2.6
-    version: 0.2.6
+    specifier: latest
+    version: 0.2.7
   svelte:
     specifier: ^4.2.12
     version: 4.2.12
@@ -2297,8 +2297,8 @@ packages:
       totalist: 3.0.1
     dev: true
 
-  /sk-seo@0.2.6:
-    resolution: {integrity: sha512-IfmFQivmxmV9xBCwCXekiQb8xOAjj2V17zn7Fm5xkEmIpaiwBHhrBRIYJoIVIgYDg76DmIn3colugHQIQWs5DQ==}
+  /sk-seo@0.2.7:
+    resolution: {integrity: sha512-rnjBUXe7yFwylT5K/+3qzs9vKQepwCIpgEQbNTt4pMrAkSfprKf+N6o7x/0zfyVV6wMf+8ovVHvKehuid+g9kw==}
     dev: true
 
   /sorcery@0.11.0:
