@@ -3,7 +3,7 @@ export async function load({ fetch }) {
     // const res = await fetch('https://bundlephobia.com/api/size?package=sk-seo');
     // const data = await res.json();
     // const gzip = (data.gzip / 1000).toFixed(1);
-    const gzip = 2.4;
+    const gzip = 2.7;
     
     const res2 = await fetch('https://api.github.com/repos/TheDahoom/sveltekit-seo');
     const data2 = await res2.json();

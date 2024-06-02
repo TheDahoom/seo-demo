@@ -10,7 +10,7 @@
         <GithubIcon classes={"scale-[75%] -ml-1"} />
         Follow
     </button>
-      <div class="input-group-shim !px-2"> { data.followCount || 2}</div>
+      <div class="input-group-shim !px-2"> { data.followCount || 4}</div>
   </a>
   
   
