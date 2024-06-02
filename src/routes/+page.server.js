@@ -9,7 +9,7 @@ export async function load({ fetch }) {
     const data2 = await res2.json();
     const starCount = data2.stargazers_count;
     
-    const res3 = await fetch('https://api.github.com/repos/TheDahoom/followers');
+    const res3 = await fetch('https://api.github.com/users/TheDahoom/followers');
     const data3 = await res3.json();
     const followerCount = data3.length;
 
