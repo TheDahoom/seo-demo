@@ -14,14 +14,10 @@ export async function load({ fetch }) {
     const res2 = await fetch('https://api.github.com/repos/TheDahoom/sveltekit-seo');
     const data2 = await res2.json();
     const starCount = data2.stargazers_count;
-    
-    const res3 = await fetch('https://api.github.com/users/TheDahoom/followers');
-    const data3 = await res3.json();
-    const followerCount = data3.length;
-
+    const forkCount = data2.forks_count;
 
     if (res2.ok) {
-        return { gzip, starCount, followerCount };
+        return { gzip, starCount, forkCount };
     } else {
         this.error(res.status, data.message);
     }
