@@ -7,6 +7,7 @@ export async function load({ fetch }) {
         const data = await res.json();
         gzip = (data.gzip / 1000).toFixed(1);
     } catch {
+        // Maybe try to calculate gzip since at build time?
         gzip = 2.8;
     }
     
