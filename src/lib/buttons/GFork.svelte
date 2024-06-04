@@ -5,10 +5,10 @@
     export let data;
   </script>
   
-  <a target="_blank" href="https://github.com/TheDahoom" class="input-group w-fit input-group-divider grid-cols-[auto_1fr_auto]">
+  <a target="_blank" href="https://github.com/TheDahoom/Sveltekit-seo/fork" class="input-group w-fit input-group-divider grid-cols-[auto_1fr_auto]">
     <button class="!px-2">
         <GithubIcon classes={"scale-[75%] -ml-1"} />
-        Follow
+        Fork
     </button>
       <div class="input-group-shim !px-2"> { data.followCount || 1}</div>
   </a>
