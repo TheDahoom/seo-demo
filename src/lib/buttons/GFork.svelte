@@ -1,5 +1,4 @@
 <script>
-    import { onMount } from "svelte";
     import GithubIcon from "../Icons/GithubIcon.svelte";
     
     export let data;
@@ -10,7 +9,7 @@
         <GithubIcon classes={"scale-[75%] -ml-1"} />
         Fork
     </button>
-      <div class="input-group-shim !px-2"> { data.followCount || 1}</div>
+      <div class="input-group-shim !px-2"> { data.forkCount || 2}</div>
   </a>
   
   
