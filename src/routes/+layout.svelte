@@ -2,9 +2,9 @@
 	import GithubIcon from '$lib/Icons/GithubIcon.svelte';
 
 	import Seo from 'sk-seo';
+	// import Seo from '$lib/Seo.svelte';
 	import Nav from '$lib/nav/Nav.svelte';
 	import Footer from '$lib/page/Footer.svelte';
-	// import Seo from '$lib/Seo.svelte';
 	import '../app.postcss';
 	import { AppShell, AppBar, LightSwitch, initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 	import { routes } from '$lib/page/navigation';
