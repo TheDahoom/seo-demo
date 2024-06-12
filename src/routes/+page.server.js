@@ -23,7 +23,7 @@ export async function load({ fetch }) {
     }
 
 
-    if (res2 !== nullconst) {
+    if (res2 !== null) {
         return { gzip, starCount, forkCount };
     } else {
         return { gzip, starCount: 91, forkCount: 1 };
