@@ -1,8 +1,8 @@
 <script>
 	import GithubIcon from '$lib/Icons/GithubIcon.svelte';
 
-	import Seo from 'sk-seo';
-	// import Seo from '$lib/Seo.svelte';
+	// import Seo from 'sk-seo';
+	import Seo from '$lib/Seo.svelte';
 	import Nav from '$lib/nav/Nav.svelte';
 	import Footer from '$lib/page/Footer.svelte';
 	import '../app.postcss';
@@ -53,7 +53,8 @@
 		'https://instagram.com/TheDahoom',
 		'https://github.com/TheDahoom',
 		'https://linkedin.com/in/dahoom'
-	]} />
+	]}
+/>
 <Drawer width="w-3/4 md:w-3/5" >
 	<h2 class="p-4">Navigation</h2>
 	<hr />
