@@ -6,11 +6,11 @@ export async function load() {
         if(res4.ok){
             return { version };
         } else {
-            return { version: `0.2.3`};
+            return { version: `0.3.2`};
         }
     } catch (error) {
         console.log(error.status, error.message)
-        return { version: `0.2.3` }
+        return { version: `0.3.2` }
     }
 
 
