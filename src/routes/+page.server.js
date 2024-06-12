@@ -11,15 +11,22 @@ export async function load({ fetch }) {
         gzip = 2.8;
     }
     
-    const res2 = await fetch('https://api.github.com/repos/TheDahoom/sveltekit-seo');
-    const data2 = await res2.json();
-    const starCount = data2.stargazers_count;
-    const forkCount = data2.forks_count;
+    let starCount, forkCount, res2;
+    try {
+        res2 = await fetch('https://api.github.com/repos/TheDahoom/sveltekit-seo');
+        const data2 = await res2.json();
+        starCount = data2.stargazers_count;
+        forkCount = data2.forks_count;
+    } catch {
+        starCount = 91;
+        forkCount = 1;
+    }
 
-    if (res2.ok) {
+
+    if (res2 !== nullconst) {
         return { gzip, starCount, forkCount };
     } else {
-        return { gzip, starCount: 90, forkCount: 1 };
+        return { gzip, starCount: 91, forkCount: 1 };
         this.error(res.status, data.message);
     }
 }
