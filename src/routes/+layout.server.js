@@ -6,7 +6,7 @@ export async function load() {
         if(res4.ok){
             return { version };
         } else {
-            return { version: `0.3.2`};
+            return { version: `0.3.4`};
         }
     } catch (error) {
         console.log(error.status, error.message)
