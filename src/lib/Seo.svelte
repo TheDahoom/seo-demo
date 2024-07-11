@@ -4,27 +4,25 @@
     export let title = "", description = "", keywords = "", canonical = "", siteName = "", imageURL = "", logo = "",
         author = "", name = "";
     export let index = true, twitter = true, openGraph = true;
-    export let schemaOrg = false;
+    export let schemaOrg = false, schemaType = ['Person', 'Organization'];
     export let socials = [], jsonld = {};
 
     let Ld = {
         "@context": "https://schema.org",
-        "@type": ['Person', 'Organization'],
-        "name": `${name}`,
-        "url": `${$page.url.origin}`,
-        "image": `${imageURL}`,
-        logo: {
+        "@type": schemaType.length > 1 ? schemaType : schemaType[0],
+        "name": name,
+        "url": $page.url.origin,
+        "image": imageURL,
+        "logo": {
             "@type": "ImageObject",
-            "url": `${logo}`,
+            "url": logo,
             "width": 48,
             "height": 48
         },
-        "sameAs": [
-            `${socials.join(", ")}`
-        ],
+        "sameAs": socials
     };
     Ld = { ...Ld, ...jsonld };
-    let jsonLdScript = `<script type="application/ld+json">${JSON.stringify(Ld)}${'<'}/script>`;
+    let LdScript = `<script type="application/ld+json">${JSON.stringify(Ld)}${'<'}/script>`;
 </script>
 <svelte:head>
     {#if title !== ""}
@@ -80,6 +78,6 @@
     {/if}
     <slot/>
     {#if schemaOrg || socials[0] !== undefined || logo !== "" || name !== ""}
-        {@html jsonLdScript}
+        {@html LdScript}
     {/if}
 </svelte:head>
