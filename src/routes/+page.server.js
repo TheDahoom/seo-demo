@@ -18,15 +18,15 @@ export async function load({ fetch }) {
         starCount = data2.stargazers_count;
         forkCount = data2.forks_count;
     } catch {
-        starCount = 91;
-        forkCount = 1;
+        starCount = 109;
+        forkCount = 2;
     }
 
 
     if (res2 !== null) {
         return { gzip, starCount, forkCount };
     } else {
-        return { gzip, starCount: 91, forkCount: 1 };
+        return { gzip, starCount: 109, forkCount: 2 };
         this.error(res.status, data.message);
     }
 }
