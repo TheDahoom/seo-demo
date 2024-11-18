@@ -18,8 +18,8 @@ export async function load({ fetch }) {
         starCount = data2.stargazers_count;
         forkCount = data2.forks_count;
     } catch {
-        starCount = 109;
-        forkCount = 2;
+        starCount = 126;
+        forkCount = 5;
     }
 
 
